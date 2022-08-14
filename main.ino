@@ -21,7 +21,6 @@ String webPage = "";
 void setup() {
   Serial.begin(115200);
   pinMode(LED, OUTPUT);
-  //pinMode(input_ttl, INPUT);
   pinMode(input_ttl, INPUT_PULLUP);
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {  
